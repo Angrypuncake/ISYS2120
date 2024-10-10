@@ -1,0 +1,51 @@
+AircraftID,ICAOCode,AircraftRegistration,Manufacturer,Model,Capacity
+1,B712,GQ-MV1,Boeing,Boeing 717,279
+2,B712,TC-1UQ,Boeing,Boeing 717,219
+3,B712,AX-ZUS,Boeing,Boeing 717,233
+4,DC91,LH-XKO,Douglas,Douglas DC-9-10,257
+5,B712,HY-W8D,Boeing,Boeing 717,255
+6,B773,EE-8R0,Boeing,Boeing 777-300,246
+7,B712,EZ-Q1G,Boeing,Boeing 717,179
+8,B712,JX-C31,Boeing,Boeing 717,153
+9,B74S,MJ-PP2,Boeing,Boeing 747SP,162
+10,E50P,WX-K7J,Embraer,Embraer Phenom 100,109
+11,B712,ZK-ZW3,Boeing,Boeing 717,255
+12,E50P,EW-481,Embraer,Embraer Phenom 100,146
+13,B74S,YD-E6E,Boeing,Boeing 747SP,113
+14,DC91,EC-IW9,Douglas,Douglas DC-9-10,117
+15,B74S,XH-BNH,Boeing,Boeing 747SP,208
+16,B74S,MB-5I9,Boeing,Boeing 747SP,274
+17,DC91,FG-B92,Douglas,Douglas DC-9-10,150
+18,B773,GM-4IR,Boeing,Boeing 777-300,216
+19,B773,DL-3TA,Boeing,Boeing 777-300,258
+20,DC91,GP-BVK,Douglas,Douglas DC-9-10,148
+21,E50P,MC-I45,Embraer,Embraer Phenom 100,126
+22,B712,WX-W1W,Boeing,Boeing 717,224
+23,B773,IV-5GT,Boeing,Boeing 777-300,108
+24,B712,TV-E8K,Boeing,Boeing 717,126
+25,B74S,EE-52Z,Boeing,Boeing 747SP,106
+26,B74S,FS-P1U,Boeing,Boeing 747SP,100
+27,B773,KB-R8F,Boeing,Boeing 777-300,245
+28,B712,QW-VFQ,Boeing,Boeing 717,140
+29,B773,VB-I4Q,Boeing,Boeing 777-300,292
+30,DC91,AO-YRH,Douglas,Douglas DC-9-10,268
+31,DC91,PL-T22,Douglas,Douglas DC-9-10,200
+32,B773,JX-9GL,Boeing,Boeing 777-300,250
+33,B773,FW-5XU,Boeing,Boeing 777-300,206
+34,E50P,DO-YER,Embraer,Embraer Phenom 100,245
+35,B74S,TL-ZX6,Boeing,Boeing 747SP,274
+36,B712,TV-4N7,Boeing,Boeing 717,138
+37,B74S,UK-QKH,Boeing,Boeing 747SP,186
+38,B74S,RU-4RA,Boeing,Boeing 747SP,279
+39,DC91,AG-M1A,Douglas,Douglas DC-9-10,238
+40,B773,ZO-IL4,Boeing,Boeing 777-300,253
+41,DC91,KV-VS2,Douglas,Douglas DC-9-10,175
+42,B773,YR-1NS,Boeing,Boeing 777-300,203
+43,E50P,BT-DLR,Embraer,Embraer Phenom 100,117
+44,DC91,HN-PFB,Douglas,Douglas DC-9-10,108
+45,B74S,VU-R4U,Boeing,Boeing 747SP,118
+46,B74S,UB-P22,Boeing,Boeing 747SP,111
+47,B712,XY-PA8,Boeing,Boeing 717,162
+48,B712,TL-8WQ,Boeing,Boeing 717,248
+49,B773,FZ-N17,Boeing,Boeing 777-300,184
+50,E50P,KG-0XQ,Embraer,Embraer Phenom 100,241

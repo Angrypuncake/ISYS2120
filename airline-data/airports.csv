@@ -1,0 +1,100 @@
+AirportID,AirportName,AirportCode,City,Country
+1,Hartsfield–Jackson Atlanta International Airport,ATL,Atlanta,United States
+2,Beijing Capital International Airport,PEK,Beijing,China
+3,Dubai International Airport,DXB,Dubai,United Arab Emirates
+4,Los Angeles International Airport,LAX,Los Angeles,United States
+5,O'Hare International Airport,ORD,Chicago,United States
+6,Heathrow Airport,LHR,London,United Kingdom
+7,Haneda Airport,HND,Tokyo,Japan
+8,Hong Kong International Airport,HKG,Hong Kong,Hong Kong
+9,Shanghai Pudong International Airport,PVG,Shanghai,China
+10,Charles de Gaulle International Airport,CDG,Paris,France
+11,Amsterdam Airport Schiphol,AMS,Amsterdam,Netherlands
+12,Dallas-Fort Worth International Airport,DFW,Dallas,United States
+13,Guangzhou Baiyun International Airport,CAN,Guangzhou,China
+14,Frankfurt am Main International Airport,FRA,Frankfurt,Germany
+15,Istanbul Atatürk Airport,IST,Istanbul,Turkey
+16,Indira Gandhi International Airport,DEL,Delhi,India
+17,Soekarno-Hatta International Airport,CGK,Jakarta,Indonesia
+18,Singapore Changi Airport,SIN,Singapore,Singapore
+19,Incheon International Airport,ICN,Seoul,South Korea
+20,Denver International Airport,DEN,Denver,United States
+21,Suvarnabhumi Airport,BKK,Bangkok,Thailand
+22,John F. Kennedy International Airport,JFK,New York,United States
+23,Kuala Lumpur International Airport,KUL,Kuala Lumpur,Malaysia
+24,San Francisco International Airport,SFO,San Francisco,United States
+25,Adolfo Suárez Madrid–Barajas Airport,MAD,Madrid,Spain
+26,Chengdu Shuangliu International Airport,CTU,Chengdu,China
+27,McCarran International Airport,LAS,Las Vegas,United States
+28,Barcelona–El Prat Airport,BCN,Barcelona,Spain
+29,Chhatrapati Shivaji International Airport,BOM,Mumbai,India
+30,Toronto Pearson International Airport,YYZ,Toronto,Canada
+31,Seattle–Tacoma International Airport,SEA,Seattle,United States
+32,Charlotte Douglas International Airport,CLT,Charlotte,United States
+33,Gatwick Airport,LGW,London,United Kingdom
+34,Shenzhen Bao'an International Airport,SZX,Shenzhen,China
+35,Wuhan Tianhe International Airport,WUH,Wuhan,China
+36,Mexico City International Airport,MEX,Mexico City,Mexico
+37,Kunming Changshui International Airport,KMG,Kunming,China
+38,Munich Airport,MUC,Munich,Germany
+39,Orlando International Airport,MCO,Orlando,United States
+40,Miami International Airport,MIA,Miami,United States
+41,Phoenix Sky Harbor International Airport,PHX,Phoenix,United States
+42,Sydney Airport,SYD,Sydney,Australia
+43,Newark Liberty International Airport,EWR,Newark,United States
+44,Ninoy Aquino International Airport,MNL,Manila,Philippines
+45,Shanghai Hongqiao International Airport,SHA,Shanghai,China
+46,Xi'an Xianyang International Airport,XIY,Xi'an,China
+47,Leonardo da Vinci–Fiumicino Airport,FCO,Rome,Italy
+48,George Bush Intercontinental Houston Airport,IAH,Houston,United States
+49,Narita International Airport,NRT,Tokyo,Japan
+50,Sheremetyevo International Airport,SVO,Moscow,Russia
+51,Chongqing Jiangbei International Airport,CKG,Chongqing,China
+52,Don Mueang International Airport,DMK,Bangkok,Thailand
+53,St Paul International Airport,MSP,Minneapolis,United States
+54,São Paulo–Guarulhos International Airport,GRU,Sao Paulo,Brazil
+55,Logan International Airport,BOS,Boston,United States
+56,Tan Son Nhat International Airport,SGN,Ho Chi Minh City,Vietnam
+57,Hamad International Airport,DOH,Doha,Qatar
+58,Hangzhou Xiaoshan International Airport,HGH,Hangzhou,China
+59,Detroit Metropolitan Wayne County Airport,DTW,Detroit,United States
+60,King Abdulaziz International Airport,JED,Jeddah,Saudi Arabia
+61,Melbourne Airport,MEL,Melbourne,Australia
+62,Fort Lauderdale Hollywood International Airport,FLL,Fort Lauderdale,United States
+63,Orlando Executive Airport,ORL,Orlando,United States
+64,Sabiha Gökçen International Airport,SAW,Istanbul,Turkey
+65,El Dorado International Airport,BOG,Bogota,Colombia
+66,Moscow Domodedovo Airport,DME,Moscow,Russia
+67,Jeju International Airport,CJU,Cheju,South Korea
+68,LaGuardia Airport,LGA,New York,United States
+69,Philadelphia International Airport,PHL,Philadelphia,United States
+70,Dublin Airport,DUB,Dublin,Ireland
+71,Zürich Airport,ZRH,Zurich,Switzerland
+72,Copenhagen Airport,CPH,Copenhagen,Denmark
+73,Kansai International Airport,KIX,Osaka,Japan
+74,Palma De Mallorca Airport,PMI,Palma de Mallorca,Spain
+75,Manchester Airport,MAN,Manchester,United Kingdom
+76,"Oslo Airport, Gardermoen",OSL,Oslo,Norway
+77,Lisbon Portela Airport,LIS,Lisbon,Portugal
+78,Stockholm Arlanda Airport,ARN,Stockholm,Sweden
+79,Washington International Thurgood Marshall Airport,BWI,Baltimore,United States
+80,Antalya Airport,AYT,Antalya,Turkey
+81,London Stansted Airport,STN,London,United Kingdom
+82,Nanjing Lukou International Airport,NKG,Nanjing,China
+83,Gimpo International Airport,GMP,Seoul,South Korea
+84,Kempegowda International Airport,BLR,Bangalore,India
+85,King Khaled International Airport,RUH,Riyadh,Saudi Arabia
+86,Brussels Airport,BRU,Brussels,Belgium
+87,Düsseldorf International Airport,DUS,Duesseldorf,Germany
+88,Xiamen Gaoqi International Airport,XMN,Xiamen,China
+89,Vienna International Airport,VIE,Vienna,Austria
+90,Zhengzhou Xinzheng International Airport,CGO,Zhengzhou,China
+91,Salt Lake City International Airport,SLC,Salt Lake City,United States
+92,Vancouver International Airport,YVR,Vancouver,Canada
+93,Ronald Reagan Washington National Airport,DCA,Washington,United States
+94,Changsha Huanghua International Airport,CSX,Changcha,China
+95,Abu Dhabi International Airport,AUH,Abu Dhabi,United Arab Emirates
+96,Cancún International Airport,CUN,Cancun,Mexico
+97,Fukuoka Airport,FUK,Fukuoka,Japan
+98,Liuting Airport,TAO,Qingdao,China
+99,Brisbane International Airport,BNE,Brisbane,Australia
