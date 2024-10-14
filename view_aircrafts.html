@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aircraft Details</title>
+</head>
+<body>
+    <h1>Aircraft Details</h1>
+    <p><strong>Aircraft ID:</strong> {{ aircraft[0] }}</p>
+    <p><strong>ICAO Code:</strong> {{ aircraft[1] }}</p>
+    <p><strong>Aircraft Registration:</strong> {{ aircraft[2] }}</p>
+    <p><strong>Name:</strong> {{ aircraft[3] }}</p>
+    <p><strong>Manufacturer:</strong> {{ aircraft[4] }}</p>
+    <p><strong>Model:</strong> {{ aircraft[5] }}</p>
+
+    <a href="{{ url_for('aircraft.update_aircraft', aircraft_id=aircraft[0]) }}">Update Aircraft</a>
+    <form action="{{ url_for('aircraft.delete_aircraft', aircraft_id=aircraft[0]) }}" method="post">
+        <button type="submit">Delete Aircraft</button>
+    </form>
+    <a href="{{ url_for('aircraft.list_aircrafts') }}">Back to List</a>
+</body>
+</html>
