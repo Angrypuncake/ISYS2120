@@ -1,0 +1,55 @@
+{% include 'top.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Aircrafts</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Aircraft List</h1>
+        {% if aircrafts %}
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Aircraft ID</th>
+                    <th>ICAO Code</th>
+                    <th>Registration</th>
+                    <th>Name</th>
+                    <th>Manufacturer</th>
+                    <th>Model</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for aircraft in aircrafts %}
+                <tr>
+                    <td>{{ aircraft['aircraftid'] }}</td>  <!-- aircraftid -->
+                    <td>{{ aircraft['icaocode'] }}</td>  <!-- icaocode -->
+                    <td>{{ aircraft['aircraftregistration'] }}</td>  <!-- registration -->
+                    <td>{{ aircraft['name'] }}</td>  <!-- name -->
+                    <td>{{ aircraft['manufacturer'] }}</td>  <!-- manufacturer -->
+                    <td>{{ aircraft['model'] }}</td>  <!-- model -->
+                    <td>
+                        <a href="{{ url_for('aircraft.view_aircraft', aircraft_id=aircraft['aircraftid']) }}" class="btn btn-info">View</a>
+                        {% if session.get('isadmin') %}
+                        <a href="{{ url_for('aircraft.update_aircraft', aircraft_id=aircraft['aircraftid']) }}" class="btn btn-warning">Update</a>
+                        <form action="{{ url_for('aircraft.delete_aircraft', aircraft_id=aircraft['aircraftid']) }}" method="POST" style="display:inline;">
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}                
+            </tbody>
+        </table>
+        {% else %}
+        <p>No aircrafts found.</p>
+        {% endif %}
+    </div>
+</body>
+</
+
+{% include 'end.html' %}

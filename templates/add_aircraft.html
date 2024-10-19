@@ -1,0 +1,61 @@
+{% include 'top.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Aircraft</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Add a New Aircraft</h1>
+        <form action="{{ url_for('aircraft.add_aircraft') }}" method="POST">
+            <!-- Aircraft ID: Must be a number less than 1,000,000 -->
+            <div class="form-group">
+                <label for="AircraftID">Aircraft ID (less than 10,000,000)</label>
+                <input type="number" class="form-control" id="AircraftID" name="AircraftID" max="999999" min="0" required>
+                <small class="form-text text-muted">Enter a number less than 1,000,000.</small>
+            </div>
+
+            <!-- ICAO Code: Must start with a letter and end with 3 digits -->
+            <div class="form-group">
+                <label for="ICAOCode">ICAO Code (format: D123)</label>
+                <input type="text" class="form-control" id="ICAOCode" name="ICAOCode" pattern="[A-Za-z]\d{3}" title="ICAO Code must start with a letter and end with 3 digits (e.g., 'D123')." required>
+                <small class="form-text text-muted">Format: A letter followed by 3 digits (e.g., D123).</small>
+            </div>
+
+            <!-- Registration: Must follow the format XX-YYY or XX-Y12 -->
+            <div class="form-group">
+                <label for="AircraftRegistration">Registration (format: XX-YYY or XX-Y12)</label>
+                <input type="text" class="form-control" id="AircraftRegistration" name="AircraftRegistration" pattern="[A-Za-z]{2}-[A-Za-z0-9]{3}" title="Registration must follow the format 'XX-YYY' or 'XX-Y12'." required>
+                <small class="form-text text-muted">Format: Two letters, hyphen, and three alphanumeric characters (e.g., 'AB-C12').</small>
+            </div>
+
+            <!-- Name: Maximum length of 100 characters -->
+            <div class="form-group">
+                <label for="Name">Name (max 100 characters)</label>
+                <input type="text" class="form-control" id="Name" name="Name" maxlength="100" required>
+                <small class="form-text text-muted">Name cannot exceed 100 characters.</small>
+            </div>
+
+            <!-- Manufacturer: Maximum length of 100 characters -->
+            <div class="form-group">
+                <label for="Manufacturer">Manufacturer (max 100 characters)</label>
+                <input type="text" class="form-control" id="Manufacturer" name="Manufacturer" maxlength="100" required>
+                <small class="form-text text-muted">Manufacturer cannot exceed 100 characters.</small>
+            </div>
+
+            <!-- Model: Maximum length of 100 characters -->
+            <div class="form-group">
+                <label for="Model">Model (max 100 characters)</label>
+                <input type="text" class="form-control" id="Model" name="Model" maxlength="100" required>
+                <small class="form-text text-muted">Model cannot exceed 100 characters.</small>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Add Aircraft</button>
+        </form>
+    </div>
+</body>
+</html>
+{% include 'end.html' %}

@@ -1,0 +1,100 @@
+{% include 'top.html' %}
+
+<div class="content">
+    <div class="container my-4">
+        <h1>Aircraft Summary</h1>
+        {% if summary %}
+        <!-- Aircraft Summary Table -->
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Manufacturer</th>
+                    <th>Total Aircraft</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in summary %}
+                <tr>
+                    <td>{{ row['manufacturer'] }}</td>
+                    <td>{{ row['total_aircraft'] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <!-- Aircraft Summary Chart -->
+        <h2>Aircraft Distribution by Manufacturer</h2>
+        <canvas id="aircraftChart" width="400" height="200"></canvas>
+
+        {% else %}
+        <p>No summary data available.</p>
+        {% endif %}
+
+        <!-- Back to List button -->
+        <a href="{{ url_for('aircraft.list_aircrafts') }}" class="btn btn-secondary">Back to List</a>
+    </div>
+</div>
+
+<!-- Include Chart.js library -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- Include Chart.js library -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    // Check if summary data exists
+    {% if summary %}
+        // Extract data from summary for the chart
+        var manufacturers = {{ summary | map(attribute='manufacturer') | list | tojson }};
+        var totalAircrafts = {{ summary | map(attribute='total_aircraft') | list | tojson }};
+
+        // Define different colors for the bars
+        var backgroundColors = [
+            'rgba(75, 192, 192, 0.6)', // Teal
+            'rgba(255, 159, 64, 0.6)',  // Orange
+            'rgba(255, 205, 86, 0.6)',  // Yellow
+            'rgba(54, 162, 235, 0.6)',  // Blue
+            'rgba(153, 102, 255, 0.6)'  // Purple
+        ];
+
+        var borderColors = [
+            'rgba(75, 192, 192, 1)',
+            'rgba(255, 159, 64, 1)',
+            'rgba(255, 205, 86, 1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(153, 102, 255, 1)'
+        ];
+
+        // Create the chart
+        var ctx = document.getElementById('aircraftChart').getContext('2d');
+        var aircraftChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: manufacturers, // Labels are the manufacturers
+                datasets: [{
+                    label: 'Total Aircraft',
+                    data: totalAircrafts, // Data is the total number of aircraft
+                    backgroundColor: backgroundColors, // Array of colors for each bar
+                    borderColor: borderColors, // Array of border colors
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false  // Disable the legend
+                    }
+                }
+            }
+        });
+    {% endif %}
+</script>
+
+
+{% include 'end.html' %}

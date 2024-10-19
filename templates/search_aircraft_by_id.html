@@ -1,0 +1,36 @@
+{% include 'top.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Aircraft by ID</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Search Aircraft by ID</h1>
+
+        <!-- Flash messages for feedback -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            <div class="alert alert-warning" role="alert">
+              {% for category, message in messages %}
+                <p>{{ message }}</p>
+              {% endfor %}
+            </div>
+          {% endif %}
+        {% endwith %}
+
+        <!-- Form to search aircraft by ID -->
+        <form action="{{ url_for('aircraft.search_aircraft_by_id') }}" method="POST">
+            <div class="form-group">
+                <label for="aircraftId">Enter Aircraft ID:</label>
+                <input type="number" name="aircraft_id" class="form-control" id="aircraftId" placeholder="Enter Aircraft ID" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+    </div>
+</body>
+</html>
+{% include 'end.html' %}
